@@ -27,12 +27,14 @@ body{
 }
 a{color:inherit;text-decoration:none}
 
-/* LOGO SVG TEXT */
-.logo-svg{display:block;margin-left:auto;margin-right:auto}
-.logo-svg text{
+/* LOGO TEXT */
+.logo-text{
   font-family:'Bodoni Moda','Didot','Bodoni MT',Georgia,serif;
   font-weight:900;
-  fill:#3a3a3a;
+  color:#3a3a3a;
+  letter-spacing:.08em;
+  line-height:1;
+  white-space:nowrap;
 }
 
 /* HEADER */
@@ -43,7 +45,7 @@ a{color:inherit;text-decoration:none}
   justify-content:space-between;
   border-bottom:1px solid var(--border);
 }
-.header-logo .logo-svg{height:40px;width:auto;margin:0}
+.header-logo .logo-text{font-size:2rem}
 .header-nav{
   display:flex;
   gap:2.5rem;
@@ -61,8 +63,8 @@ a{color:inherit;text-decoration:none}
   margin:0 auto;
   animation:fadeUp .8s ease-out;
 }
-.hero-logo{margin-bottom:3rem;display:flex;justify-content:center;align-items:center}
-.hero-logo .logo-svg{height:clamp(100px,18vw,220px);width:auto;max-width:100%}
+.hero-logo{margin-bottom:3rem}
+.hero-logo .logo-text{font-size:clamp(5rem,18vw,14rem)}
 .hero-tagline{
   font-family:var(--serif);
   font-size:1.15rem;
@@ -182,9 +184,7 @@ a{color:inherit;text-decoration:none}
 <!-- HEADER -->
 <header class="header">
   <div class="header-logo">
-    <svg class="logo-svg" viewBox="0 0 340 80" xmlns="http://www.w3.org/2000/svg">
-      <text x="170" y="65" text-anchor="middle" font-size="72" letter-spacing="6">AIOB</text>
-    </svg>
+    <span class="logo-text">AIOB</span>
   </div>
   <nav class="header-nav">
     <a href="#episodes">集數</a>
@@ -195,9 +195,7 @@ a{color:inherit;text-decoration:none}
 <!-- HERO -->
 <section class="hero">
   <div class="hero-logo">
-    <svg class="logo-svg" viewBox="0 0 680 160" xmlns="http://www.w3.org/2000/svg">
-      <text x="340" y="130" text-anchor="middle" font-size="144" letter-spacing="12">AIOB</text>
-    </svg>
+    <span class="logo-text">AIOB</span>
   </div>
   <p class="hero-tagline">All In One Box — AI 時代的一切，盡在盒中</p>
   <p class="hero-desc">由 <a href="https://www.youtube.com/@chingmongTV" target="_blank">程網 ChingMong TV</a> 製作，深入探討人工智能的最新發展、產業影響與社會反思。每集邀請不同嘉賓，從科技、經濟、教育、宗教等多個角度剖析 AI 浪潮。</p>
